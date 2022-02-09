@@ -1,5 +1,9 @@
+
+
+
 *{
     font-family: Roboto, sans-serif;
+    margin: 0;
 }
 
 .main{
@@ -23,27 +27,30 @@
 }
 
 .container{
-    
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
     height:100vh;
-    background-color:white;
-    padding-left:20px;
-    width: 40%
+    background-color:rgb(241, 240, 240);
+   /* padding-left:20px;*/
+    width: 100%;
+    row-gap: 30px;
 }
 .text{
-    margin-top:50px;
-    width: 50%;
-    font-size:large;
+    
+    width: 60%;
+    padding-left:1.5em; 
 }
 .edge {
     height:100vh;
-    width:30%;
+    width:80%;
     background-image :url(./images/west.jpg);
     background-size: 100% 100%  
 }  
 .logo {
     display:flex;
     
-    margin-top: 40%;
+    margin-top: 35%;
      justify-content: center;
      align-items: center; 
     background:rgba(0,0,0,0.5);
@@ -62,10 +69,36 @@ body {
 
 input:focus {
     outline-color: blue;
+    box-shadow: 10px 5px 5px green;
 }
 
 label {
     font-size: 0.7em;
     letter-spacing: 0.3em;
     font-weight: bold;
+}
+
+button {
+    background-color:#596D48;
+    color:white;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 10px 35px;
+    letter-spacing:0.05em;
+}
+
+form{
+    background-color: white;
+    padding-left:1.5em;
+}
+p{
+    font-weight: bold;
+    line-height: 1.5em;
+}
+a{
+    text-decoration:none;
+}
+.last{
+    padding-left: 1.5em;
 }
